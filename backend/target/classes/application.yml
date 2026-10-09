@@ -1,0 +1,51 @@
+spring:
+  application:
+    name: pulse-performance-backend
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/college_project
+    username: postgres
+    password: sanjay
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    open-in-view: false
+
+  jackson:
+    serialization:
+      fail-on-empty-beans: false
+    default-property-inclusion: non_null
+
+server:
+  port: 8080
+
+# JWT Configuration
+app:
+  jwt:
+    secret: "404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970"
+    expiration-ms: 86400000   # 24 hours
+
+# CORS allowed origins (React frontend)
+cors:
+  allowed-origins: "http://localhost:5173,http://localhost:3000"
+
+# Swagger/OpenAPI
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+    tags-sorter: alpha
+    operations-sorter: alpha
+
+logging:
+  level:
+    com.pulse.performance: DEBUG
+    org.springframework.security: INFO
