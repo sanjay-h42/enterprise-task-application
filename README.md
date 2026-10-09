@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ⚡ PULSE — Enterprise Employee Performance & Feedback Management System
 
 [![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.3.4-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)](https://spring.io/projects/spring-boot)
@@ -342,3 +343,6 @@ The database is pre-seeded with sample users for instant evaluation:
 ## 📄 License
 
 This project is developed as part of an academic / internship capstone project. Distributed under the MIT License.
+=======
+# enterprise-task-application
+>>>>>>> 513455a906ca6c4d205ba21d891aaf1cf2f8406a
